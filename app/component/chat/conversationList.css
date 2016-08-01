@@ -1,0 +1,28 @@
+.cell {
+    height: 64px;
+    background-color: #20B2AA;
+    border-radius: 5px;
+}
+
+.cell .avatar {
+    background-position: center;
+    background-size:cover;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    top : 16px;
+    left: 15px;
+    border: 2px solid #fff;
+    position: absolute;
+    display: inline-block;
+}
+
+.cell .nick {
+    position: absolute;
+    top: 24px;
+    left: 72px;
+    font-size: 16px;
+    font-family: "PingFang SC";
+    color: white;
+
+}

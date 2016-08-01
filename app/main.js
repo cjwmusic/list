@@ -5,10 +5,16 @@
 // document.body.appendChild(component());
 
 var React = require('react');
-var AppComponent = require('./productBox.jsx');
+var ReactDom = require('react-dom');
 
+var ConversationCell = require('./component/chat/conversationList.jsx');
 
-React.render(
-    <AppComponent /> ,
+var user = {
+    avatar : "http://img1.ph.126.net/njuQr62_hau5OdrBOTPJRQ==/6631462490373753037.jpg",
+    nick   : "专业摄影"
+};
+
+ReactDom.render(
+    <ConversationCell user={user}/>,
     document.getElementById('content')
 )
